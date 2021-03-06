@@ -5,9 +5,9 @@ import (
 )
 
 type upperLowerTest struct {
-	val string
+	val   string
 	count int
-	want string
+	want  string
 }
 
 var upperTests = []upperLowerTest{
@@ -26,8 +26,7 @@ func TestToUpper(t *testing.T) {
 	}
 }
 
-
-var lowerTests = []upperLowerTest {
+var lowerTests = []upperLowerTest{
 	{"SOMETHING", 0, "something"},
 	{"SOMETHING", -1, "something"},
 	{"SOMETHING", 3, "somETHING"},
